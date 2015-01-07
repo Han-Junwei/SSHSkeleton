@@ -4,15 +4,15 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    <constant name="struts.devMode" value="true" />
+	<constant name="struts.devMode" value="true" />
 
-    <package name="default" namespace="/" extends="struts-default">
-        <action name="index">
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="index">
 			<result>/index.jsp</result>
-        </action>
+		</action>
         
-        <action name="hello" class="com.cscpp.lab.action.HelloWorldAction" method="execute">
-     		<result name="success">/WEB-INF/jsp/HelloWorld.jsp</result>   	
-        </action>
-    </package>
+		<action name="hello" class="com.cscpp.lab.action.HelloWorldAction" method="execute">
+			<result name="success">/WEB-INF/jsp/HelloWorld.jsp</result>   	
+		</action>
+	</package>
 </struts>
